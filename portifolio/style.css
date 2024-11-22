@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+    color: #acdfa4;
+}
+
+.container {
+    width: 85%;
+    margin: 10 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #acdfa4;
+    padding: 39px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+header h1 a {
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Brandon Grot W01 Light";
+}
+
+nav ul {
+    margin: 20px 50px 20px 50px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #69c08d;
+}
+
+.hero {
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    color: #53644c;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Estilo do carrossel */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+}
+
+.carousel-images {
+    display: flex; /* Para alinhar as imagens em linha */
+    overflow: hidden; /* Para ocultar as imagens que estão fora do contêiner */
+    width:  220%; /* Para que ocupe toda a largura disponível */
+}
+.cont-img {
+    min-width: 5%; /* Cada imagem ocupa 100% da largura do contêiner */
+    transition: transform 0.5s ease; /* Transição suave ao mudar de imagem */
+    border-radius: 20px;
+    margin: 20px;
+}
+footer {
+    background-color: #acdfa4;
+    color: hsl(58, 13%, 46%);
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-content a {
+    color: #2b4629;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.box-cont {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    width: 200px;
+    height: 340px;
+    border-radius: 80px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.img-container:hover {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.cont-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Resetando margens e paddings */
+#home {
+    width: 100%;
+    padding: 20px;
+    font-family: 'Lora', serif;
+}
+
+/* Container do conteúdo do artigo */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo para o texto */
+.text-container {
+    flex: 1;
+    max-width: 30%;
+}
+
+.cent-h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.text-container p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.9;
+    margin: 60px;
+    margin: 30px; 
+}
+
+.image-container {
+    flex: 1;
+    max-width: 35%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container,
+    .image-container {
+        max-width: 100%;
+    }
+}
+
+.invisible {
+    visibility: hidden;
+
+}
+botton{
+    background-color: #69c08d;
+    margin: 20px;
+    padding: 20px;
+}
+.carousel-controls {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 30px; /* Espaçamento entre os botões */
+    margin-top: 20px; /* Margem superior para espaçamento */
+}
+
+button {
+    background-color: #69c08d; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Torna os botões redondos */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    font-size: 1.5em; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+}
+
+button:hover,
+button:focus {
+    background-color: #5aa76e; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.95); /* Efeito de "pressionar" ao clicar */
+    .cent-h1 {
+        font-size: 2em;
+        color: #333;
+        margin-top: 20px;   /* Margem no topo */
+        margin-right: 90px; /* Margem à direita */
+        margin-bottom: 15px;
+        margin-left: 90px;  /* Margem à esquerda */
+        text-decoration: none;
+        text-align: center;
+        padding: 20px;
+    }
+    
+ }
